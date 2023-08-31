@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "camelot-in-docker"
+version = "0.1.0"
+description = ""
+authors = ["Pawel Kwasniewski <pawel@glintsolar.co>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.9"
+camelot-py = "^0.11.0"
+opencv-python = "^4.8.0.76"
+matplotlib = "^3.7.2"
+boto3 = "^1.26.120"
+pyyaml = "^6.0.1"
+
+[tool.poetry.group.dev.dependencies]
+black = "^23.3.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

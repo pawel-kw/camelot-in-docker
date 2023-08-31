@@ -1,0 +1,8 @@
+# Configuration file for PDF processing
+read_pdf:
+  pages: "1-end"
+  split_text: True
+  strip_text: "*\n"
+  flavor: "lattice"
+  line_scale: 20
+  backend: "poppler"
