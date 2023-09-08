@@ -1,3 +1,4 @@
 /.vscode
 /data/output/*csv*
+/data/input/*.properties
 .DS_Store

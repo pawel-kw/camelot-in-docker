@@ -49,11 +49,7 @@ FROM python:3.9 AS test
 
 RUN apt-get update \
     && apt-get -y install libgl1 \
-    && apt-get -y install python3-tk \
-    && apt-get -y install libconfig-dev \
-    && apt-get -y install autotools-dev \
-    && apt-get -y install libicu-dev \
-    && apt-get -y install libbz2-dev
+    && apt-get -y install python3-tk
 
 COPY --from=builder /opt/venv /opt/venv
 COPY --from=builder /usr/lib/aarch64-linux-gnu/libpoppler.so.111 /usr/lib/aarch64-linux-gnu/libpoppler.so.111 
